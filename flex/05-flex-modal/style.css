@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -13,13 +14,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -63,4 +65,28 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* Solution */
+
+.modal,
+.header-flex {
+  display: flex;
+}
+
+.modal {
+  padding: 10px;
+}
+.icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.header-flex {
+  font-size: 1.2em;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.text {
+  padding: 10px 10px 10px 0;
 }
